@@ -1,0 +1,17 @@
+$backgroundColor: #040714;
+$colorTextPrimary: silver;
+$colorTextSecondary: #f9f9f9;
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: bold;
+}
+
+$font: Avenir, sans-serif;
