@@ -1,11 +1,14 @@
-@use './variaveis';
-@use './hero';
+@use 'variaveis';
+@use 'hero';
+@use 'shows';
+@use 'plans';
 
 
 * {
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: variaveis.$font;
 }
 
 @mixin text($fontSize: 16px) {
@@ -21,7 +24,7 @@
 
 body {
     background-color: variaveis.$backgroundColor;
-    font-family: variaveis.$font;
+    
 }
 
 .text--big {
@@ -53,4 +56,23 @@ body {
     @include text(18px);
     color: variaveis.$colorTextSecondary;
     text-decoration: underline;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$colorTextSecondary;
+    background-color: #6421ff;
+    text-transform:uppercase;
+    border-radius: 4px;
+    border: none;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    cursor:pointer;
+    
+    &:hover{
+        background-color: rgba($color: #6421ff, $alpha: .7);
+    }
 }
