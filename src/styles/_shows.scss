@@ -29,12 +29,6 @@
         display: flex;
         justify-content: center;
 
-        @media (max-width: 768px){
-            white-space: nowrap;
-            overflow-x: scroll;
-            padding-left: 60px;
-        }
-
         &__button{
             color: variaveis.$colorTextSecondary;
             font-size: 20px;
