@@ -1,7 +1,6 @@
 @use 'variaveis';
 
 .shows {
-    padding: 2vw 5.6vw;
     min-height: 50vw;
 
     &__list{
@@ -9,6 +8,10 @@
         display:none;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
+
+        @media  (max-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         &--is-active{
             display:grid
@@ -26,6 +29,12 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 768px){
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 60px;
+        }
+
         &__button{
             color: variaveis.$colorTextSecondary;
             font-size: 20px;
@@ -39,6 +48,10 @@
 
             &--is--active{
                 border-color: variaveis.$colorTextSecondary;
+            }
+
+            @media (max-width: 768px){
+                font-size: 16px;
             }
         }
     }

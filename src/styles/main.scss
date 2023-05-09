@@ -1,9 +1,11 @@
 @use 'variaveis';
+@use 'header';
 @use 'hero';
 @use 'shows';
 @use 'plans';
 @use 'availeble-devices';
 @use 'faq';
+@use 'footer';
 
 
 * {
@@ -33,26 +35,56 @@ body {
 .text--big {
     @include text(18px);
 
+    @media (max-width: 768px){
+        @include text(15px)
+    }
 }
 
 .text {
     @include text;
+
+    @media (max-width: 768px){
+        @include text(11px)
+    }
 }
 
 .text--small {
     @include text(12px);
+
+    @media (max-width: 768px){
+        @include text(11px)
+    }
 }
 
 .title--big {
     @include title(44px);
+
+    @media (max-width: 768px){
+        @include title(26px)
+    }
 }
 
 .title {
     @include title;
+
+    @media (max-width: 768px){
+        @include title(24px)
+    }
 }
 
 .title--small{
     @include title(28px);
+
+    @media (max-width: 768px){
+        @include title(22px)
+    }
+}
+
+.padding-section{
+    padding: 2vw 5.6vw;
+    @media (max-width: 768px){
+        padding: 4vw 5.6vw;
+    }
 }
 
 .link{
@@ -62,29 +94,57 @@ body {
 }
 
 .button{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: variaveis.$colorTextSecondary;
-    background-color: #6421ff;
+    background-color: variaveis.$colorButtonPrimary;
     text-transform:uppercase;
     border-radius: 4px;
     border: none;
-    margin-top: 2vw;
-    margin-bottom: 8px;
     cursor:pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$colorButtonPrimary;
+
     
     &:hover{
-        background-color: rgba($color: #6421ff, $alpha: .7);
+        background-color: lighten(variaveis.$colorButtonPrimary, 3%);
     }
+
+    &--secondary{
+        background-color: variaveis.$colorButtonSecondary;
+        border-color:variaveis.$colorButtonSecondary;
+
+        &:hover{
+            background-color: lighten(variaveis.$colorButtonSecondary, 3%);
+        }
+    }
+
+    &--dark{
+        background-color: rgba(variaveis.$colorButtonDark, 0.8);
+        border-color: variaveis.$colorTextSecondary;
+
+        &:hover{
+            background-color: variaveis.$colorTextSecondary;
+            color: variaveis.$backgroundColor;
+        }
+    }
+
+
 }
 
 .image-text-section {
-    padding: 5.6vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
+    @media(max-width:768px){
+        display: block;
+    }
 
     img{
         max-width: 100%;
@@ -115,6 +175,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media(max-width:768px){
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 }
