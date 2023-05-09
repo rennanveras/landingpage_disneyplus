@@ -11,15 +11,19 @@
 </p>
  
  ## Tecnologias utilizadas no projeto 
+ <div>
   <img align="center" alt="Js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="HTML" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="sass" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
   <img align="center" alt="gulp" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" />
+ </div>
   
  ## Visualize o projeto 
  <a href="https://landingpage-disneyplus-2eta-h00equ8z8-rennanveras.vercel.app">Clone Disney plus</a>
- <div display="flex">
-  
-    <img  width="500px"  src="https://servidor-estaticos-ashen.vercel.app/clone-disney.png">
-    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/disney-mobile.png">
+ <div display="block">
+    <h3>Desktop</h3>
+    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/clone-disney.png">
+    <br>
+    <h3>Mobile</h3>
+    <img  width="300px" src="https://servidor-estaticos-ashen.vercel.app/disney-mobile.png">
  </div>
