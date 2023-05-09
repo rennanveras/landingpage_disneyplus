@@ -7,6 +7,7 @@
     background-color: variaveis.$backgroundColor;
     transition: background-color .5s ease;
     z-index: 99;
+    margin-bottom: -58px;
     
     &--is-hidden{
         background-color: transparent;
