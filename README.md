@@ -4,10 +4,13 @@
 
 ## Sobre o projeto
 <p> 
-  Neste projeto utilizei o Gulp para altomatizar as minhas tarefas ex: minificando as imagens do meu projeto, compilando e minificando o Sass e minificando o JS.
+  O projeto é uma landing page inspirado no site do disney plus, com as imagens e navegações semelhantes ao site original.
+  <br>
+  Neste projeto utilizei o Gulp para automatizar as minhas tarefas ex: minificando as imagens do meu projeto, compilando e minificando o Sass e minificando o JS.
   <br>
   Assim deixando o site com mais desempenho e facilitando a produção, com esse projeto consegui entender muito mais o Gulp e consolidar meus conhecimento em Sass e para 
-  finalizar deixei o site responsivo para uso em qualquer aparelho .
+  finalizar deixei o site responsivo para uso em qualquer aparelho.
+  <br> 
 </p>
  
  ## Tecnologias utilizadas no projeto 
